@@ -113,7 +113,7 @@ public class ServiceImpl implements Service {
             } else {
                 return RestResult.error(restCode);
             }
-        } catch (JSONException e) {
+        } catch (Exception e) {
             // json解析错误
             e.printStackTrace();
         }
